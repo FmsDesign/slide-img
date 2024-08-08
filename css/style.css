@@ -21,13 +21,23 @@ img {
   display: flex;
 }
 
+.slide:hover {
+  will-change: transform;
+}
+
 .slide li {
   flex-shrink: 0;
   width: 80vw;
+  overflow: hidden;
+  border-radius: 20px;
   max-width: 800px;
   margin: 0 20px;
+  transform: scale(0.8);
+  opacity: 0.8;
+  transition: 0.3;
 }
 
-.slide img {
-  border-radius: 20px;
+.slide li.ativo {
+  transform: scale(1);
+  opacity: 1;
 }
